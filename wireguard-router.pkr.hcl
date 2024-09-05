@@ -71,32 +71,32 @@ build {
   ]
 
   provisioner "file" {
-    source      = "templates/src/wireguard-router/wireguard-checkdns.service"
+    source      = "src/wireguard-router/wireguard-checkdns.service"
     destination = "/etc/systemd/system/wireguard-checkdns.service"
   }
 
   provisioner "file" {
-    source      = "templates/src/wireguard-router/wireguard-checkdns.sh"
+    source      = "src/wireguard-router/wireguard-checkdns.sh"
     destination = "/usr/local/bin/wireguard-checkdns.sh"
   }
 
   provisioner "file" {
-    source      = "templates/src/wireguard-router/wireguard-checkdns.timer"
+    source      = "src/wireguard-router/wireguard-checkdns.timer"
     destination = "/etc/systemd/system/wireguard-checkdns.timer"
   }
 
   provisioner "file" {
-    source      = "templates/src/wireguard-router/wireguard-check-connection.service"
+    source      = "src/wireguard-router/wireguard-check-connection.service"
     destination = "/etc/systemd/system/wireguard-check-connection.service"
   }
 
   provisioner "file" {
-    source      = "templates/src/wireguard-router/wireguard-check-connection.sh"
+    source      = "src/wireguard-router/wireguard-check-connection.sh"
     destination = "/usr/local/bin/wireguard-check-connection.sh"
   }
 
   provisioner "file" {
-    source      = "templates/src/wireguard-router/wireguard-check-connection.timer"
+    source      = "src/wireguard-router/wireguard-check-connection.timer"
     destination = "/etc/systemd/system/wireguard-check-connection.timer"
   }
 
