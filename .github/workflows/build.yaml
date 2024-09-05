@@ -34,7 +34,7 @@ jobs:
       - name: Build image
         uses: ./.github/actions/build-image
         with:
-          template: wiregruard-router.pkr.hcl
+          template: wireguard-router.pkr.hcl
           token: ${{ secrets.HCLOUD_TOKEN }}
           build-identifier: github-actions-${{ github.run_number }}
 
@@ -62,7 +62,7 @@ jobs:
       - name: Build image
         uses: ./.github/actions/build-image
         with:
-          template: wiregruard-router.pkr.hcl
+          template: wireguard-router.pkr.hcl
           token: ${{ secrets.HCLOUD_TOKEN }}
           build-identifier: github-actions-${{ github.run_number }}
 
@@ -89,7 +89,7 @@ jobs:
       - name: Build image
         uses: ./.github/actions/build-image
         with:
-          template: wiregruard-router.pkr.hcl
+          template: wireguard-router.pkr.hcl
           token: ${{ secrets.HCLOUD_TOKEN }}
           build-identifier: github-actions-${{ github.run_number }}
 
