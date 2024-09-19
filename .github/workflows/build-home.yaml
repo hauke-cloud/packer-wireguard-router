@@ -7,11 +7,13 @@ on:
   push:
     branches:
       - dev
+      - main
       - home
 
   repository_dispatch:
     types:
       - trigger-dev
+      - trigger-main
       - trigger-home
 
 jobs:
