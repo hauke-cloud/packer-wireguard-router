@@ -47,6 +47,7 @@ variable "snapshot_name" {
 
 locals {
   build_labels = {
+    "name"                 = "wireguard-router"
     "os-flavor"            = "ubuntu"
     "packer.io/build.id"   = "${uuidv4()}"
     "packer.io/build.time" = "{{timestamp}}"
