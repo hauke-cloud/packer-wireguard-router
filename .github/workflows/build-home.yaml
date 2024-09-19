@@ -22,6 +22,10 @@ jobs:
     environment: home
     runs-on: ubuntu-latest
 
+    concurrency:
+      group: environment
+      cancel-in-progress: false
+
     if: github.event.schedule != '0 0 * * *'
 
     steps:
